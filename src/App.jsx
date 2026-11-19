@@ -8,35 +8,35 @@ const PROJECTS = [
     name: 'GUIA INFORMATIVA', mana: ['U', 'G'], color: '#ae8705', stats: 'R6',
     type: 'Criatura Legendaria — RAINBOW SIX|GUIDE',
     text: 'Pagina web informativa para nuevos jugadores en Rainbow Six',
-    image: '/img/R6.png',
+    image: 'img/R6.png',
     url: 'https://leonardogongora69246.github.io/Raibow-Six-Guide/'
   },
   {
     name: 'POKEDEX', mana: ['G', 'U'], color: '#0336b7', stats: 'POKE',
     type: 'Artefacto — ¿Quién es ese Pokémon?',
     text: 'Ejercio de Pokedex usando bootstrap y una API de Pokemons',
-    image: '/img/Pokedex.png',
+    image: 'img/Pokedex.png',
     url: ''
   },
   {
     name: 'Maquetado de sistema de citas', mana: ['U', 'B'], color: '#38f858', stats: 'Tinder2',
     type: 'Encantamiento — Tinder2',
     text: 'Aplicacion hecha con archivos .FXML y JavaFx',
-    image: '/img/Tinder2.png',
+    image: 'img/Tinder2.png',
     url: 'https://github.com/LeonardoGongora69246/Portafolio' // <-- Puede ser GitHub si es app de escritorio
   },
   {
     name: 'Mini DBeaver', mana: ['R', 'W'], color: '#c81d1d', stats: 'Dbeaver',
     type: 'Encantamiento — Mini DBeaver',
     text: 'Aplicacion similar a DBeaver creada desde cero con funciones de conexion con SSH',
-    image: '/img/MiniDB.png',
+    image: 'img/MiniDB.png',
     url: ''
   },
   {
     name: 'Escapa del SaT', mana: ['R', 'U'], color: '#c20bf5', stats: 'SaT',
     type: 'Instantáneo — Escapa del SaT',
     text: 'Juego de navegador hecho en funcionalidades en JavaScript',
-    image: '/img/SaT.png',
+    image: 'img/SaT.png',
     url: 'https://urielm-op.github.io/escapa/'
   }
 ];
@@ -44,9 +44,9 @@ const PROJECTS = [
 const N = PROJECTS.length;
 
 const TABLE_CARDS = [
-  { image: '/img/Kardur.png', x: -3.4, z: 0.6, rot: 0.35 },
-  { image: '/img/Solring.png', x: 3.6, z: 0.1, rot: -0.28 },
-  { image: '/img/Venom.png', x: 0.3, z: 2.7, rot: 0.08 }
+  { image: 'img/Kardur.png', x: -3.4, z: 0.6, rot: 0.35 },
+  { image: 'img/Solring.png', x: 3.6, z: 0.1, rot: -0.28 },
+  { image: 'img/Venom.png', x: 0.3, z: 2.7, rot: 0.08 }
 ];
 
 const VIEWS = {
