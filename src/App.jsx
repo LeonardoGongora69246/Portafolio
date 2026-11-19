@@ -23,7 +23,7 @@ const PROJECTS = [
     type: 'Encantamiento — Tinder2',
     text: 'Aplicacion hecha con archivos .FXML y JavaFx',
     image: 'img/Tinder2.png',
-    url: '' // <-- Puede ser GitHub si es app de escritorio
+    url: '' 
   },
   {
     name: 'Mini DBeaver', mana: ['R', 'W'], color: '#c81d1d', stats: 'Dbeaver',
