@@ -1,43 +1,48 @@
-﻿import React, { useEffect, useRef, useState } from 'react';
+Alumno: Leonardo Ivan Gongora Us
+
+import React, { useEffect, useRef, useState } from 'react';
   import * as THREE from 'three';
 
-// Edita aquí tus proyectos. "image" es opcional, va en public/img (ej. '/img/plantita.jpg').
 const PROJECTS = [
   {
     name: 'GUIA INFORMATIVA', mana: ['U', 'G'], color: '#ae8705', stats: 'R6',
     type: 'Criatura Legendaria — RAINBOW SIX|GUIDE',
     text: 'Pagina web informativa para nuevos jugadores en Rainbow Six',
-    image: '/img/R6.png'
+    image: '/img/R6.png',
+    url: 'https://leonardogongora69246.github.io/Raibow-Six-Guide/'
   },
   {
     name: 'POKEDEX', mana: ['G', 'U'], color: '#0336b7', stats: 'POKE',
     type: 'Artefacto — ¿Quién es ese Pokémon?',
     text: 'Ejercio de Pokedex usando bootstrap y una API de Pokemons',
-    image: '/img/Pokedex.png'
+    image: '/img/Pokedex.png',
+    url: ''
   },
   {
     name: 'Maquetado de sistema de citas', mana: ['U', 'B'], color: '#38f858', stats: 'Tinder2',
     type: 'Encantamiento — Tinder2',
     text: 'Aplicacion hecha con archivos .FXML y JavaFx',
-    image: '/img/Tinder2.png'
+    image: '/img/Tinder2.png',
+    url: 'https://github.com/LeonardoGongora69246/Portafolio' // <-- Puede ser GitHub si es app de escritorio
   },
   {
     name: 'Mini DBeaver', mana: ['R', 'W'], color: '#c81d1d', stats: 'Dbeaver',
     type: 'Encantamiento — Mini DBeaver',
     text: 'Aplicacion similar a DBeaver creada desde cero con funciones de conexion con SSH',
-    image: '/img/MiniDB.png'
+    image: '/img/MiniDB.png',
+    url: ''
   },
   {
     name: 'Escapa del SaT', mana: ['R', 'U'], color: '#c20bf5', stats: 'SaT',
     type: 'Instantáneo — Escapa del SaT',
     text: 'Juego de navegador hecho en funcionalidades en JavaScript',
-    image: '/img/SaT.png'
+    image: '/img/SaT.png',
+    url: 'https://urielm-op.github.io/escapa/'
   }
 ];
+
 const N = PROJECTS.length;
 
-// Cartas sueltas sobre la mesa (imágenes en public/img).
-// x, z = posición en el tapete, rot = giro en radianes
 const TABLE_CARDS = [
   { image: '/img/Kardur.png', x: -3.4, z: 0.6, rot: 0.35 },
   { image: '/img/Solring.png', x: 3.6, z: 0.1, rot: -0.28 },
@@ -583,10 +588,25 @@ export default function App() {
                 {current.stats}
               </div>
             )}
-            <div className="min-w-0">
-              <h2 className="text-base md:text-lg font-bold text-amber-100 md:mt-3">{current.name}</h2>
-              <p className="text-[11px] text-amber-500/80">{current.type}</p>
-              <p className="text-xs md:text-sm text-slate-300 mt-1 md:mt-2">{current.text}</p>
+            <div className="min-w-0 flex flex-col justify-between">
+              <div>
+                <h2 className="text-base md:text-lg font-bold text-amber-100 md:mt-3">{current.name}</h2>
+                <p className="text-[11px] text-amber-500/80">{current.type}</p>
+                <p className="text-xs md:text-sm text-slate-300 mt-1 md:mt-2">{current.text}</p>
+              </div>
+
+              {/* BOTÓN PARA ABRIR EL PROYECTO */}
+              {current.url && (
+                <a
+                  href={current.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-flex items-center justify-center gap-2 w-full py-2 px-4 rounded-xl bg-amber-500/20 hover:bg-amber-500/35 border border-amber-500/50 text-amber-200 text-xs md:text-sm font-semibold transition-colors"
+                >
+                  <span>Ver proyecto</span>
+                  <span>↗</span>
+                </a>
+              )}
             </div>
           </div>
         </div>
