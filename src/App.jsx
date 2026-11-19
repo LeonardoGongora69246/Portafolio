@@ -1,4 +1,4 @@
-Alumno: Leonardo Ivan Gongora Us
+// Alumno: Leonardo Ivan Gongora Us
 
 import React, { useEffect, useRef, useState } from 'react';
   import * as THREE from 'three';
